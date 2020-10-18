@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Familia\\Documents\\UNED Andres\\3° Cuatri 2020\\830 - Programacion Avanzada\\Tarea 1\\Proyecto\\LaGota\\LaGota.csproj": {}
+    "C:\\Users\\Familia\\Source\\Repos\\asanabriam\\LaGota\\LaGota.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Familia\\Documents\\UNED Andres\\3° Cuatri 2020\\830 - Programacion Avanzada\\Tarea 1\\Proyecto\\LaGota\\LaGota.csproj": {
+    "C:\\Users\\Familia\\Source\\Repos\\asanabriam\\LaGota\\LaGota.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Familia\\Documents\\UNED Andres\\3° Cuatri 2020\\830 - Programacion Avanzada\\Tarea 1\\Proyecto\\LaGota\\LaGota.csproj",
+        "projectUniqueName": "C:\\Users\\Familia\\Source\\Repos\\asanabriam\\LaGota\\LaGota.csproj",
         "projectName": "LaGota",
-        "projectPath": "C:\\Users\\Familia\\Documents\\UNED Andres\\3° Cuatri 2020\\830 - Programacion Avanzada\\Tarea 1\\Proyecto\\LaGota\\LaGota.csproj",
+        "projectPath": "C:\\Users\\Familia\\Source\\Repos\\asanabriam\\LaGota\\LaGota.csproj",
         "packagesPath": "C:\\Users\\Familia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Familia\\Documents\\UNED Andres\\3° Cuatri 2020\\830 - Programacion Avanzada\\Tarea 1\\Proyecto\\LaGota\\obj\\",
+        "outputPath": "C:\\Users\\Familia\\Source\\Repos\\asanabriam\\LaGota\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
