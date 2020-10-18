@@ -12,7 +12,7 @@ namespace LaGota
         private Categoria categoria;
         private Cliente cliente;
 
-        //Constructor vacío
+        //Constructor vacío.
         public Hidrometro()
         {
             nis = "";
@@ -21,7 +21,7 @@ namespace LaGota
             categoria = new Categoria();
             cliente = new Cliente();
         }
-        //Constructor con parametros
+        //Constructor con parametros.
         public Hidrometro(string nis, string marca, string serie, Categoria categoria, Cliente cliente)
         {
             this.nis = nis;
@@ -31,7 +31,7 @@ namespace LaGota
             this.cliente = cliente;
         }
 
-        // Setters y Getters de los atributos de la clase
+        // Setters y Getters de los atributos de la clase.
         public string Nis { get => nis; set => nis = value; }
         public string Marca { get => marca; set => marca = value; }
         public string Serie { get => serie; set => serie = value; }
