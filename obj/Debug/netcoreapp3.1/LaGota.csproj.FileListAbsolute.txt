@@ -1,0 +1,52 @@
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\bin\Debug\netcoreapp3.1\LaGota.exe
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\bin\Debug\netcoreapp3.1\LaGota.deps.json
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.json
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.dev.json
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\bin\Debug\netcoreapp3.1\LaGota.dll
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\bin\Debug\netcoreapp3.1\LaGota.pdb
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\obj\Debug\netcoreapp3.1\LaGota.csprojAssemblyReference.cache
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\obj\Debug\netcoreapp3.1\LaGota.AssemblyInfoInputs.cache
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\obj\Debug\netcoreapp3.1\LaGota.AssemblyInfo.cs
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\obj\Debug\netcoreapp3.1\LaGota.dll
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\obj\Debug\netcoreapp3.1\LaGota.pdb
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\obj\Debug\netcoreapp3.1\LaGota.genruntimeconfig.cache
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\obj\Debug\netcoreapp3.1\LaGota.csproj.CoreCompileInputs.cache
+C:\Users\Familia\Source\Repos\LaGota\bin\Debug\netcoreapp3.1\LaGota.exe
+C:\Users\Familia\Source\Repos\LaGota\bin\Debug\netcoreapp3.1\LaGota.deps.json
+C:\Users\Familia\Source\Repos\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.json
+C:\Users\Familia\Source\Repos\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.dev.json
+C:\Users\Familia\Source\Repos\LaGota\bin\Debug\netcoreapp3.1\LaGota.dll
+C:\Users\Familia\Source\Repos\LaGota\bin\Debug\netcoreapp3.1\LaGota.pdb
+C:\Users\Familia\Source\Repos\LaGota\obj\Debug\netcoreapp3.1\LaGota.csprojAssemblyReference.cache
+C:\Users\Familia\Source\Repos\LaGota\obj\Debug\netcoreapp3.1\LaGota.AssemblyInfoInputs.cache
+C:\Users\Familia\Source\Repos\LaGota\obj\Debug\netcoreapp3.1\LaGota.AssemblyInfo.cs
+C:\Users\Familia\Source\Repos\LaGota\obj\Debug\netcoreapp3.1\LaGota.csproj.CoreCompileInputs.cache
+C:\Users\Familia\Source\Repos\LaGota\obj\Debug\netcoreapp3.1\LaGota.dll
+C:\Users\Familia\Source\Repos\LaGota\obj\Debug\netcoreapp3.1\LaGota.pdb
+C:\Users\Familia\Source\Repos\LaGota\obj\Debug\netcoreapp3.1\LaGota.genruntimeconfig.cache
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\bin\Debug\netcoreapp3.1\LaGota.exe
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\bin\Debug\netcoreapp3.1\LaGota.deps.json
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.json
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.dev.json
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\bin\Debug\netcoreapp3.1\LaGota.dll
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\bin\Debug\netcoreapp3.1\LaGota.pdb
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\obj\Debug\netcoreapp3.1\LaGota.csprojAssemblyReference.cache
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\obj\Debug\netcoreapp3.1\LaGota.AssemblyInfoInputs.cache
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\obj\Debug\netcoreapp3.1\LaGota.AssemblyInfo.cs
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\obj\Debug\netcoreapp3.1\LaGota.csproj.CoreCompileInputs.cache
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\obj\Debug\netcoreapp3.1\LaGota.dll
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\obj\Debug\netcoreapp3.1\LaGota.pdb
+C:\Users\Familia\Source\Repos\asanabriam\LaGota\obj\Debug\netcoreapp3.1\LaGota.genruntimeconfig.cache
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\bin\Debug\netcoreapp3.1\LaGota.exe
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\bin\Debug\netcoreapp3.1\LaGota.deps.json
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.json
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.dev.json
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\bin\Debug\netcoreapp3.1\LaGota.dll
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\bin\Debug\netcoreapp3.1\LaGota.pdb
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\obj\Debug\netcoreapp3.1\LaGota.csprojAssemblyReference.cache
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\obj\Debug\netcoreapp3.1\LaGota.AssemblyInfoInputs.cache
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\obj\Debug\netcoreapp3.1\LaGota.AssemblyInfo.cs
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\obj\Debug\netcoreapp3.1\LaGota.csproj.CoreCompileInputs.cache
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\obj\Debug\netcoreapp3.1\LaGota.dll
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\obj\Debug\netcoreapp3.1\LaGota.pdb
+C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\obj\Debug\netcoreapp3.1\LaGota.genruntimeconfig.cache

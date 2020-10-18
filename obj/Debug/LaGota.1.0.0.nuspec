@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LaGota</id>
+    <version>1.0.0</version>
+    <authors>LaGota</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\bin\Debug\netcoreapp3.1\LaGota.runtimeconfig.json" target="lib\netcoreapp3.1\LaGota.runtimeconfig.json" />
+    <file src="C:\Users\Familia\Documents\UNED Andres\3° Cuatri 2020\830 - Programacion Avanzada\Tarea 1\Proyecto\LaGota\LaGota\bin\Debug\netcoreapp3.1\LaGota.dll" target="lib\netcoreapp3.1\LaGota.dll" />
+  </files>
+</package>
