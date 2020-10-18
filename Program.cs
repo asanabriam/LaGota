@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 
 
@@ -40,12 +41,12 @@ namespace LaGota
         { // función creada para imprimir en la pantalla una cadena de caracteres en un coordenada determinada
             System.Console.SetCursorPosition(x, y);
         }
-        
+
         //Método que contine todas las funciones del menú
         static void menuPrincipal()
-        { 
+        {
             int m = 0; // Variable para almacenar la opción del usuario
-
+            string opcion = "";// Variable para almacenar la opción del usuario
             do
             {
                 pantalla();
@@ -71,186 +72,215 @@ namespace LaGota
                 {
                     m = int.Parse(Console.ReadLine()); // se almacena la opción
                 }
-                catch(Exception) {
+                catch (Exception)
+                {
                     m = -1;
                 }
 
                 switch (m)
                 {
-                    case 1:
+                case 1:
+                    do
+                    {
+                        System.Console.Clear();
+                        pantalla();
+                        escribePantalla(26, 7, "--------- REGISTROS ---------");
+                        escribePantalla(27, 10, "1. Registro de clientes");
+                        escribePantalla(27, 11, "2. Registro de funcionarios");
+                        escribePantalla(27, 12, "3. Registro de hidrómetros");
+                        escribePantalla(27, 13, "4. Registro de categorías de servicios");
+                        escribePantalla(27, 14, "5. Atrás");
+                        escribePantalla(27, 16, "Opción: [ ]");
+                        escribePantalla(70, 9, "╔═══════════════════════════╗");
+                        escribePantalla(70, 10, "║ ╦═╗╔═╗╔═╗╦╔═╗╔╦╗╦═╗╔═╗╔═╗ ║");
+                        escribePantalla(70, 11, "║ ╠╦╝║╣ ║ ╦║╚═╗ ║ ╠╦╝║ ║╚═╗ ║");
+                        escribePantalla(70, 12, "║ ╩╚═╚═╝╚═╝╩╚═╝ ╩ ╩╚═╚═╝╚═╝ ║");
+                        escribePantalla(70, 13, "╚═══════════════════════════╝");
+                        gotoxy(36, 16);
+                        // Se lee la opcion del usuario y se valida
+                        try
+                        {
+                            m = int.Parse(Console.ReadLine()); // se almacena la opción
+                        }
+                        catch
+                        {
+                            m = -1;
+                        }
+                        switch (m)
+                        {
+                            case 1: RegistroDeClientes(); break;
+                            case 2: RegistroDeFuncionaros(); break;
+
+                            case 3: RegistroDeHidrometros(); break;
+
+                            case 4: RegistroDeCategorias(); break;
+
+                            case 5: break;
+
+                            default:
+
+                                System.Console.Clear();
+                                pantalla();
+                                escribePantalla(28, 9, "***** OPCIÓN INCORRECTA *****");
+                                System.Console.ReadKey(); break;
+                        }
+                    }
+                    while (m != 5); // termina el ciclo si la opción es 4
+                    m = 0;
+                    break;
+                case 2:
+                    do
+                    {
+                        System.Console.Clear();
+                        pantalla();
+                        escribePantalla(26, 7, "----------- REPORTES DE REGISTROS -----------");
+                        escribePantalla(27, 10, "1. Lista de clientes");
+                        escribePantalla(27, 11, "2. Lista de funcionarios");
+                        escribePantalla(27, 12, "3. Lista de hidrómetros");
+                        escribePantalla(27, 13, "4. Listar todas las categorías");
+                        escribePantalla(27, 14, "5. Atrás");
+                        escribePantalla(27, 16, "Opción: [ ]");
+                        escribePantalla(70, 9, "╔══════════════════════════╗");
+                        escribePantalla(70, 10, "║ ╦═╗╔═╗╔═╗╔═╗╦═╗╔╦╗╔═╗╔═╗ ║");
+                        escribePantalla(70, 11, "║ ╠╦╝║╣ ╠═╝║ ║╠╦╝ ║ ║╣ ╚═╗ ║");
+                        escribePantalla(70, 12, "║ ╩╚═╚═╝╩  ╚═╝╩╚═ ╩ ╚═╝╚═╝ ║");
+                        escribePantalla(70, 13, "╚══════════════════════════╝");
+                        gotoxy(36, 16);
+
+
+                        // Se lee la opcion del usuario y se valida
+                        try
+                        {
+                            m = int.Parse(Console.ReadLine()); // se almacena la opción
+                        }
+                        catch
+                        {
+                            m = -1;
+                        }
+                        switch (m)
+                        {
+                            case 1: MostrarListaClientes(); break;
+
+                            case 2: MostrarListaFuncionarios(); break;
+
+                            case 3: MostarListaHidrometros(); break;
+
+                            case 4: MostrarListaCategorias(); break;
+
+                            case 5: break;
+
+                            default:
+                                System.Console.Clear();
+                                pantalla();
+                                escribePantalla(28, 9, "***** OPCIÓN INCORRECTA *****");
+                                System.Console.ReadKey(); break;
+                        }
+                    }
+                    while (m != 5); // termina el ciclo si la opción es 3
+                    m = 0;
+                    break;
+                case 3:; break;
+
+                case 4:; break;
+
+                case 5:
+                    System.Console.Clear();
+                    pantalla();
+
                         do
                         {
                             System.Console.Clear();
                             pantalla();
-                            escribePantalla(26, 7, "--------- REGISTROS ---------");
-                            escribePantalla(27, 10, "1. Registro de clientes");
-                            escribePantalla(27, 11, "2. Registro de funcionarios");
-                            escribePantalla(27, 12, "3. Registro de hidrómetros");
-                            escribePantalla(27, 13, "4. Registro de categorías de servicios");
-                            escribePantalla(27, 14, "5. Atrás");
-                            escribePantalla(27, 16, "Opción: [ ]");
-                            escribePantalla(70, 9, "╔═══════════════════════════╗");
-                            escribePantalla(70, 10, "║ ╦═╗╔═╗╔═╗╦╔═╗╔╦╗╦═╗╔═╗╔═╗ ║");
-                            escribePantalla(70, 11, "║ ╠╦╝║╣ ║ ╦║╚═╗ ║ ╠╦╝║ ║╚═╗ ║");
-                            escribePantalla(70, 12, "║ ╩╚═╚═╝╚═╝╩╚═╝ ╩ ╩╚═╚═╝╚═╝ ║");
-                            escribePantalla(70, 13, "╚═══════════════════════════╝");
-                            gotoxy(36, 16);
-                            // Se lee la opcion del usuario y se valida
-                            try
-                            {
-                                m = int.Parse(Console.ReadLine()); // se almacena la opción
+                            escribePantalla(18, 18, "***** ¿Desea Salir del sistema? *****");
+                            escribePantalla(18, 19, "      Digite 'S' para salir, o 'N' para continuar: [ ]");
+                            gotoxy(104, 19);
+                            opcion = Console.ReadLine();
+
+                            if (opcion == "S" || opcion == "s"){
+                                System.Console.Clear();
+                                pantalla();
+                                escribePantalla(28, 9, "***** FIN DEL PROGRAMA *****");
+                                gotoxy(0, 25);
+                                break;
                             }
-                            catch
+
+                            else if (opcion == "N" || opcion == "n")
                             {
-                                m = -1;
+                                m = 0;
                             }
-                            switch (m)
+                            else
                             {
-                                case 1: RegistroDeClientes(); break;
-                                case 2: RegistroDeFuncionaros(); break;
-
-                                case 3: RegistroDeHidrometros(); break;
-
-                                case 4: RegistroDeCategorias(); break;
-
-                                case 5: break;
-
-                                default:
-
-                                    System.Console.Clear();
-                                    pantalla();
-                                    escribePantalla(28, 9, "***** OPCIÓN INCORRECTA *****");
-                                    System.Console.ReadKey(); break;
+                                pantalla();
+                                escribePantalla(18, 18, "***** Opción No valida *****");
+                                m = 1;
+                                System.Console.ReadKey(); 
+                                
                             }
-                        }
-                        while (m != 5); // termina el ciclo si la opción es 4
-                        m = 0;
+
+
+                        } while (m!=5 && m!=0);
                         break;
-                    case 2:
-                        do
-                        {
-                            System.Console.Clear();
-                            pantalla();
-                            escribePantalla(26, 7, "----------- REPORTES DE REGISTROS -----------");
-                            escribePantalla(27, 10, "1. Lista de clientes");
-                            escribePantalla(27, 11, "2. Lista de funcionarios");
-                            escribePantalla(27, 12, "3. Lista de hidrómetros");
-                            escribePantalla(27, 13, "4. Listar todas las categorías");
-                            escribePantalla(27, 14, "5. Atrás");
-                            escribePantalla(27, 16, "Opción: [ ]");
-                            escribePantalla(70, 9, "╔══════════════════════════╗");
-                            escribePantalla(70, 10, "║ ╦═╗╔═╗╔═╗╔═╗╦═╗╔╦╗╔═╗╔═╗ ║");
-                            escribePantalla(70, 11, "║ ╠╦╝║╣ ╠═╝║ ║╠╦╝ ║ ║╣ ╚═╗ ║");
-                            escribePantalla(70, 12, "║ ╩╚═╚═╝╩  ╚═╝╩╚═ ╩ ╚═╝╚═╝ ║");
-                            escribePantalla(70, 13, "╚══════════════════════════╝");
-                            gotoxy(36, 16);
+                default:
 
-
-                            // Se lee la opcion del usuario y se valida
-                            try
-                            {
-                                m = int.Parse(Console.ReadLine()); // se almacena la opción
-                            }
-                            catch
-                            {
-                                m = -1;
-                            }
-                            switch (m)
-                            {
-                                case 1: MostrarListaClientes(); break;
-
-                                case 2: MostrarListaFuncionarios(); break;
-
-                                case 3: MostarListaHidrometros(); break;
-
-                                case 4: MostrarListaCategorias(); break;
-
-                                case 5: break;
-
-                                default:
-                                    System.Console.Clear();
-                                    pantalla();
-                                    escribePantalla(28, 9, "***** OPCIÓN INCORRECTA *****");
-                                    System.Console.ReadKey(); break;
-                            }
-                        }
-                        while (m != 5); // termina el ciclo si la opción es 3
-                        m = 0;
-                        break;
-                    case 3:; break;
-
-                    case 4:; break;
-
-                    case 5:
-                        System.Console.Clear();
-                        pantalla();
-                        escribePantalla(28, 9, "***** FIN DEL PROGRAMA *****");
-                        gotoxy(0, 25);
-                        break;
-
-                    default:
-
-                        System.Console.Clear();
-                        pantalla();
-                        escribePantalla(28, 9, "***** OPCIÓN INCORRECTA *****");
-                        System.Console.ReadKey(); break;
-
+                    System.Console.Clear();
+                    pantalla();
+                    escribePantalla(28, 9, "***** OPCIÓN INCORRECTA *****");
+                    System.Console.ReadKey(); break;
                 }
             }
             while (m != 5);
         }
-        
         //Método que solicita los datos del cliente y se encarga de almacenarlos
         static void RegistroDeClientes()
         {
-            String id, nom, ape1, ape2, email, cel, opcion;
-            Boolean continuar = true;
+        String id, nom, ape1, ape2, email, cel, opcion;
+        Boolean continuar = true;
 
-            do
+        do
+        {
+            pantalla();
+            escribePantalla(20, 8, "INGRESO REGISTRO DE CLIENTE");
+            escribePantalla(25, 10, "Número identificación...[                         ]");
+            escribePantalla(25, 11, "Nombre..................[                         ]");
+            escribePantalla(25, 12, "Apellido1...............[                         ]");
+            escribePantalla(25, 13, "Apellido2...............[                         ]");
+            escribePantalla(25, 14, "Email...................[                         ]");
+            escribePantalla(25, 15, "Celular.................[                         ]");
+            gotoxy(50, 10);
+            id = Console.ReadLine();
+            gotoxy(50, 11);
+            nom = Console.ReadLine();
+            gotoxy(50, 12);
+            ape1 = Console.ReadLine();
+            gotoxy(50, 13);
+            ape2 = Console.ReadLine();
+            gotoxy(50, 14);
+            email = Console.ReadLine();
+            gotoxy(50, 15);
+            cel = Console.ReadLine();
+
+            try
             {
-                pantalla();
-                escribePantalla(20, 8, "INGRESO REGISTRO DE CLIENTE");
-                escribePantalla(25, 10, "Número identificación...[                         ]");
-                escribePantalla(25, 11, "Nombre..................[                         ]");
-                escribePantalla(25, 12, "Apellido1...............[                         ]");
-                escribePantalla(25, 13, "Apellido2...............[                         ]");
-                escribePantalla(25, 14, "Email...................[                         ]");
-                escribePantalla(25, 15, "Celular.................[                         ]");
-                gotoxy(50, 10);
-                id = Console.ReadLine();
-                gotoxy(50, 11);
-                nom = Console.ReadLine();
-                gotoxy(50, 12);
-                ape1 = Console.ReadLine();
-                gotoxy(50, 13);
-                ape2 = Console.ReadLine();
-                gotoxy(50, 14);
-                email = Console.ReadLine();
-                gotoxy(50, 15);
-                cel = Console.ReadLine();
+                datos.RegistrarCliente(id, nom, ape1, ape2, email, cel);
+                escribePantalla(28, 18, "***** CLIENTE REGISTRADO *****");
+                escribePantalla(18, 20, "***** ¿Desea realizar otro registro? *****");
+                escribePantalla(18, 21, "      Digite '1' para registrar otro Cliente, o cualquier otra letra para continuar: [ ]");
+                gotoxy(104, 21);
+                opcion = Console.ReadLine();
 
-                try
+                if (opcion != "1")
                 {
-                    datos.RegistrarCliente(id, nom, ape1, ape2, email, cel);
-                    escribePantalla(28, 18, "***** CLIENTE REGISTRADO *****");
-                    escribePantalla(18, 20, "***** ¿Desea realizar otro registro? *****");
-                    escribePantalla(18, 21, "      Digite '1' para registrar otro Cliente, o cualquier otra letra para continuar: [ ]");
-                    gotoxy(104, 21);
-                    opcion = Console.ReadLine();
-
-                    if (opcion != "1")
-                    {
-                        continuar = false;
-                    }
-                }
-                catch (IndexOutOfRangeException)
-                {
-                    escribePantalla(28, 20, "***** NO SE PUDO REGISTRAR EL CLIENTE - MEMORIA LLENA*****");
-                    System.Console.ReadKey();
+                    continuar = false;
                 }
             }
-            while (continuar);
+            catch (IndexOutOfRangeException)
+            {
+                escribePantalla(28, 20, "***** NO SE PUDO REGISTRAR EL CLIENTE - MEMORIA LLENA*****");
+                System.Console.ReadKey();
+            }
         }
+        while (continuar);
+    }
         
         //Método que solicita los datos del funcionario y se encarga de almacenarlos
         static void RegistroDeFuncionaros()  
